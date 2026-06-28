@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dmnwa2h5jef4i" path="res://Scenes/player.tscn" id="2_11mgy"]
 [ext_resource type="Script" uid="uid://5hfdo521vbhj" path="res://Scenes/garlic.gd" id="3_o6yob"]
 [ext_resource type="Texture2D" uid="uid://cde5c3o54jeen" path="res://images/mandrake.png" id="4_5txvl"]
+[ext_resource type="PackedScene" uid="uid://c0u776eub5rkj" path="res://Scenes/themed_timer.tscn" id="6_0uv5o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5vpd"]
 size = Vector2(1189, 104.5)
@@ -227,3 +228,8 @@ position = Vector2(213.02655, 195.74721)
 rotation = -2.6215515
 scale = Vector2(1.9535055, 2.1739058)
 shape = SubResource("CapsuleShape2D_q5vpd")
+
+[node name="ThemedTimer" parent="." unique_id=171335152 instance=ExtResource("6_0uv5o")]
+position = Vector2(499, -410)
+
+[connection signal="garlic_collected" from="Garlic" to="." method="_on_garlic_garlic_collected"]
