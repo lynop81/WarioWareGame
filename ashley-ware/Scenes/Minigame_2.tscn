@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://fbfc64qfo6fp"]
+
+[ext_resource type="Texture2D" uid="uid://kodwkhw5y0w3" path="res://images/minigame_1_bg.png" id="1_6vy4i"]
+[ext_resource type="Script" uid="uid://dayyvrbycd4ci" path="res://Scenes/minigame_2.gd" id="1_jd1nn"]
+[ext_resource type="Texture2D" uid="uid://cde5c3o54jeen" path="res://images/mandrake.png" id="2_j03pv"]
+[ext_resource type="Script" uid="uid://blaouc2jdhl1s" path="res://Scenes/button_1.gd" id="3_jd1nn"]
+[ext_resource type="PackedScene" uid="uid://c0u776eub5rkj" path="res://Scenes/themed_timer.tscn" id="4_o2adb"]
+
+[node name="Minigame_2" type="Node2D" unique_id=269281455]
+script = ExtResource("1_jd1nn")
+
+[node name="Background" type="TextureRect" parent="." unique_id=603826296]
+offset_right = 1157.0
+offset_bottom = 659.0
+texture = ExtResource("1_6vy4i")
+
+[node name="Button_1" type="TextureButton" parent="." unique_id=1436376393]
+offset_left = 77.0
+offset_top = 115.0
+offset_right = 516.0
+offset_bottom = 554.0
+scale = Vector2(0.40535426, 0.38916868)
+texture_normal = ExtResource("2_j03pv")
+script = ExtResource("3_jd1nn")
+
+[node name="Button_2" type="TextureButton" parent="." unique_id=110640370]
+offset_left = 208.0
+offset_top = 335.0
+offset_right = 647.0
+offset_bottom = 774.0
+scale = Vector2(0.40535426, 0.38916868)
+texture_normal = ExtResource("2_j03pv")
+script = ExtResource("3_jd1nn")
+
+[node name="Button_3" type="TextureButton" parent="." unique_id=1930913240]
+offset_left = 735.0
+offset_top = 79.0
+offset_right = 1174.0
+offset_bottom = 518.0
+scale = Vector2(0.40535426, 0.38916868)
+texture_normal = ExtResource("2_j03pv")
+script = ExtResource("3_jd1nn")
+
+[node name="Button_4" type="TextureButton" parent="." unique_id=1210009950]
+offset_left = 714.0
+offset_top = 465.0
+offset_right = 1153.0
+offset_bottom = 904.0
+scale = Vector2(0.40535426, 0.38916868)
+texture_normal = ExtResource("2_j03pv")
+script = ExtResource("3_jd1nn")
+
+[node name="ThemedTimer" parent="." unique_id=171335152 instance=ExtResource("4_o2adb")]
+position = Vector2(6, -414)
