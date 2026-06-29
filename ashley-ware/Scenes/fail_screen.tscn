@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dx0v0few3ee30"]
 
-[ext_resource type="Script" uid="uid://j3dphphvrsm8" path="res://Scenes/fail_screen.gd" id="1_qgjdb"]
+[ext_resource type="Script" uid="uid://j3dphphvrsm8" path="res://scenes/fail_screen.gd" id="1_qgjdb"]
 [ext_resource type="Texture2D" uid="uid://bi1mjjafdyymm" path="res://images/over1.png" id="2_3e32n"]
 [ext_resource type="Texture2D" uid="uid://nm8lxsblnk1a" path="res://images/over2.png" id="3_hjix5"]
 
