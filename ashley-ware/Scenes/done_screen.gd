@@ -12,4 +12,5 @@ func _process(delta: float) -> void:
 
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
-		get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")
+		Global.minigames_done = 0
+		get_tree().change_scene_to_file("res://scenes/title_screen.tscn")
